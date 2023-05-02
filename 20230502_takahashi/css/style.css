@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+html {
+    font-size: 62.5%;
+    word-break: normal;
+}
+
+* {
+    line-height: 1.2;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Noto Sans JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", 'Indie Flower', "Open Sans", Meiryo, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #878787;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex {
+    display: flex;
+}
+
+.content_width {
+    width: 100%;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'Indie Flower';
+    color: #ba2d6f;
+    font-size: 1.3rem;
+}
+
+h4 {
+    color: inherit;
+    font-size: 2.3rem;
+}
+
+h5 {
+    color: white;
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 2.8rem;
+}
+
+.header-ttl {
+    width: 150px;
+}
+
+.header img {
+    width: 100%;
+}
+
+.header-nav-list {
+    display: flex;
+    font-weight: 500;
+    font-family: Meiryo;
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: 2.5rem;
+}
+
+/* firstview */
+.firstview .content_width {
+    position: relative;
+    padding: 0;
+}
+
+.firstview .flex {
+    justify-content: space-between;
+}
+
+.firstview__copy {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+
+}
+
+.firstview__copy span {
+    color: #1695b8;
+}
+
+.firstview__copy h1 {
+    font-family: 'Indie Flower';
+    font-size: 6.5rem;
+    color: #ba2d6f;
+    line-height: 11rem;
+}
+
+.firstview__copy h2 {
+    margin-top: 4rem;
+    color: #ba2d6f;
+    font-size: 2.3rem;
+    letter-spacing: -0.1rem;
+}
+
+.firstview__copy p {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    line-height: 2.6rem;
+}
+
+.firstview__copy p span {
+    color: inherit;
+    padding-left: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.firstview-img {
+    width: 60%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.firstview-img img {
+    width: 100%;
+}
+
+/* NEWS */
+
+.news .content_width {
+    max-width: 78rem;
+    padding-top: 9rem;
+    padding-left: 3rem;
+    padding-bottom: 6.3rem;
+
+}
+
+.news .content_width h3,
+.news .content_width h4 {
+    margin: 0 auto;
+}
+
+.news .content_width h3 {
+    padding-bottom: 1rem;
+}
+
+
+.news__container hr {
+    margin: 2.5rem auto 1.6rem;
+    height: 0.2rem;
+    background-color: #878787;
+}
+
+.news__container {
+    margin-top: 3.5rem;
+}
+
+.news__table {
+    width: 100%;
+    margin: 0 auto;
+    border-spacing: 0;
+    text-align: left;
+}
+
+.news__table th,
+.news__table td {
+    border-bottom: 0.1rem solid #878787;
+    padding: 1.7rem 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.news__table th {
+    font-family: "Open Sans";
+    width: 17%;
+    font-weight: normal;
+}
+
+.news__table td::before {
+    content: "ニュース";
+    background: #ba2d6f;
+    color: white;
+    border-radius: 3rem;
+    padding: 0rem 1.5rem;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+}
+
+/* about */
+
+.about {
+    background-color: #f5f5f5;
+}
+
+.about .content_width {
+    max-width: 93rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 4rem;
+}
+
+.about .content_width h3 {
+    font-size: 1.5rem;
+    padding-top: 4.5rem;
+}
+
+.about .content_width h4 {
+    font-family: Meiryo;
+    font-size: 2.5rem;
+    padding-top: 0.8rem;
+
+}
+
+.about__wrapper {
+    margin-top: 3.5rem;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.about__content-text {
+    width: 40%;
+}
+
+.about__content-text p {
+    line-height: 2.5rem;
+    letter-spacing: -0.05rem;
+    padding-bottom: 2rem;
+
+}
+
+.about__content-img {
+    width: 40%;
+}
+
+.about__content-img img {
+    width: 100%;
+}
+
+/* service */
+
+.service .content_width {
+    max-width: 96rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.service .content_width h3 {
+    margin-bottom: 1.3rem;
+}
+
+.sevice__wrapper {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+.sevice__content-left {
+    margin: 0 auto;
+    padding-bottom: 7rem;
+    text-align: center;
+    background-color: #ba2d6f
+}
+
+.service__content-left-img {
+    width: 30%;
+    margin: 4rem auto 1rem;
+}
+
+.service__content-left img {
+    width: 100%;
+}
+
+.sevice__content-text {
+    margin: 1.5rem auto;
+    color: white;
+    text-align: left;
+    width: 83.1%;
+    line-height: 2.5rem;
+}
+
+/* 右上 */
+
+.sevice__content-right {
+    height: 50%;
+    margin: 0 auto;
+    padding: 0 1rem 0rem;
+    text-align: left;
+    background-color: #b35b8b
+}
+
+.service__content-right-img {
+    width: 30%;
+    margin: 3rem auto 0.5rem;
+}
+
+.service__content-right img {
+    width: 100%;
+}
+
+.sevice__content-right-caption {
+    width: 64%;
+    text-align: left;
+    margin-top: 4.5rem;
+}
+
+.sevice__content-right-text {
+    color: white;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+}
+
+/* 右下 */
+
+.sevice__content-bottom {
+    height: 50%;
+    margin: 0 auto;
+    padding: 0 1rem 0rem;
+    text-align: left;
+    background-color: #b2889e
+}
+
+.service__content-bottom-img {
+    width: 30%;
+    margin: 3rem auto 0.5rem;
+}
+
+.service__content-bottom img {
+    width: 100%;
+}
+
+.sevice__content-bottom-caption {
+    width: 64%;
+    text-align: left;
+    margin-top: 4.5rem;
+}
+
+.sevice__content-bottom-text {
+    color: white;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+}
+
+/* ブログ */
+
+.blog {
+    background-color: #f5f5f5;
+}
+
+.blog .content_width {
+    max-width: 96rem;
+    padding-bottom: 5.6rem;
+}
+
+.blog .content_width h3 {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.blog .flex {
+    justify-content: space-between;
+}
+
+
+.blog__article {
+    width: 30%;
+    background-color: white;
+    border-radius: 1.5rem;
+}
+
+.blog__wrapper {
+    margin-top: 3.5rem;
+}
+
+.blog__img {
+    position: relative;
+}
+
+.blog img {
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+}
+
+.blog__cut {
+    font-family: "Arial";
+    background-color: #ba2d6f;
+    color: white;
+    position: absolute;
+    top: 0;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem 0 0 0;
+}
+
+.blog__content {
+    padding-top: 2rem;
+    margin: 0 auto;
+}
+
+.blog__ttl {
+    margin: 0 auto;
+    width: 25rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+}
+
+.tag {
+    padding: 3.5rem 1.5rem 2rem;
+}
+
+.tag p {
+    display: inline-block;
+    font-family: "Open Sans";
+}
+
+.blog__tag {
+    margin-left: 5rem;
+}
+
+.blog__btn {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.blog__btn a {
+    padding: 1.5rem 5rem;
+    border: solid 0.2rem #ba2d6f;
+    background-color: white;
+    color: #ba2d6f;
+    border-radius: 3rem;
+}
+
+/* 会社概要 */
+.company .content_width {
+    max-width: 76rem;
+    padding-bottom: 7rem;
+}
+
+.company h3 {
+    margin: 8rem 0 1.3rem;
+}
+
+.company__table {
+    margin-top: 3.5rem;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border: 0.1rem solid #cacaca;
+}
+
+.company__table th {
+    width: 30%;
+    padding: 1.8rem 1.5rem;
+    background-color: #f5f5f5;
+    border: 0.1rem solid #cacaca;
+}
+
+.company__table td {
+    font-family: "Open Sans";
+    padding-left: 1.5rem;
+    border: 0.1rem solid #cacaca;
+}
+
+/* 採用情報 */
+.recruit .content_width {
+    padding: 0;
+}
+
+.recruit .flex {
+    justify-content: center;
+
+}
+
+.recruit__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 22vw;
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 700;
+    background-image: url(../img/recruit.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.recruit__info a {
+    display: inline-block;
+}
+
+.interview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 22vw;
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 700;
+    background-image: url(../img/interview.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.interview a {
+    display: inline-block;
+}
+
+/* contact */
+
+.contact .content_width {
+    max-width: 78rem;
+    text-align: center;
+    padding-bottom: 8rem;
+}
+
+.contact .content_width h6 {
+    position: relative;
+    font-size: 2rem;
+    margin-top: 7rem;
+}
+
+.contact__line {
+    margin: 2.5rem auto 1.5rem;
+    width: 0.2rem;
+    height: 4rem;
+    background-color: #ba2d6f;
+}
+
+.contact__btn {
+    position: relative;
+    display: inline-block;
+    padding: 3rem 9.7rem;
+    color: white;
+    border-radius: 4.5rem;
+    background: linear-gradient(to right, #f71d8b, #ba176a);
+    box-shadow: 0 1rem 0.1rem rgba(132, 0, 80);
+    white-space: nowrap;
+    text-align: center;
+}
+
+.contact__btn::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 3rem;
+    background: url(../img/mailicon.svg) no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* フッター */
+footer {
+    background-color: #f5f5f5;
+    padding: 5rem 0;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+small {
+    font-size: 1.4rem;
+}
